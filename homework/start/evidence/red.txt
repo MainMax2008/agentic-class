@@ -1,0 +1,231 @@
+﻿=== (а) Поломка обрезания пробелов в createTask ===
+
+> test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90mC:/New/Projects/agentic-class/homework/start[39m
+
+ [31mтЭп[39m src/tasks.test.ts [2m([22m[2m6 tests[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 13[2mms[22m[39m
+   [31mтЭп[39m ╨▒╨░╨╖╨╛╨▓╨░╤П ╨┤╨╛╤Б╨║╨░ [2m(2)[22m
+[31m     [31m├Ч[31m ╤Б╨╛╨╖╨┤╨░╤С╤В ╨╖╨░╨┤╨░╤З╤Г ╨╕ ╨╛╨▒╤А╨╡╨╖╨░╨╡╤В ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡[39m[32m 9[2mms[22m[39m
+     [32mтЬУ[39m ╤Д╨╕╨╗╤М╤В╤А╤Г╨╡╤В ╨│╨╛╤В╨╛╨▓╤Л╨╡ ╨╖╨░╨┤╨░╤З╨╕[32m 1[2mms[22m[39m
+   [32mтЬУ[39m R1: ╨┐╨╡╤А╨╡╨╕╨╝╨╡╨╜╨╛╨▓╨░╨╜╨╕╨╡ ╨╕ ╨┐╤А╨╛╨▒╨╡╨╗╤М╨╜╤Л╨╡ ╤Б╨╕╨╝╨▓╨╛╨╗╤Л [2m(2)[22m
+     [32mтЬУ[39m ╨╛╤В╨║╨╗╨╛╨╜╤П╨╡╤В ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡ ╨╕╨╖ ╨┐╤А╨╛╨▒╨╡╨╗╨╛╨▓, ╤В╨░╨▒╤Г╨╗╤П╤Ж╨╕╨╕ ╨╕ ╨╜╨╡╤А╨░╨╖╤А╤Л╨▓╨╜╨╛╨│╨╛ ╨┐╤А╨╛╨▒╨╡╨╗╨░[32m 0[2mms[22m[39m
+     [32mтЬУ[39m ╨╛╨▒╤А╨╡╨╖╨░╨╡╤В ╨┐╤А╨╛╨▒╨╡╨╗╤М╨╜╤Л╨╡ ╤Б╨╕╨╝╨▓╨╛╨╗╤Л ╨┐╨╛ ╨║╤А╨░╤П╨╝ ╨┐╤А╨╕ ╨┐╨╡╤А╨╡╨╕╨╝╨╡╨╜╨╛╨▓╨░╨╜╨╕╨╕[32m 0[2mms[22m[39m
+   [32mтЬУ[39m R2: ╤Г╨╜╨░╤Б╨╗╨╡╨┤╨╛╨▓╨░╨╜╨╜╨░╤П ╨┐╤Г╤Б╤В╨░╤П ╤Б╤В╤А╨╛╨║╨░ [2m(1)[22m
+     [32mтЬУ[39m ╤Б╨║╤А╤Л╨▓╨░╨╡╤В ╨╖╨░╨┤╨░╤З╨╕ ╤Б ╨┐╤Г╤Б╤В╤Л╨╝ ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡╨╝ ╨▓╨╛ ╨▓╤Б╨╡╤Е ╤Д╨╕╨╗╤М╤В╤А╨░╤Е[32m 0[2mms[22m[39m
+   [32mтЬУ[39m R3: ╤Б╤З╤С╤В╤З╨╕╨║ ╨╛╤В╨║╤А╤Л╤В╤Л╤Е ╨╖╨░╨┤╨░╤З [2m(1)[22m
+     [32mтЬУ[39m ╨╜╨╡ ╤Б╤З╨╕╤В╨░╨╡╤В ╨╖╨░╨┤╨░╤З╨╕ ╤Б ╨┐╤Г╤Б╤В╤Л╨╝ ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡╨╝[32m 0[2mms[22m[39m
+node.exe : 
+строка:1 знак:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[31mтОптОптОптОптОптОптОп[39m[1m[41m Failed Tests 1 [49m[22m[31mтОптОптОптОптОптОптОп[39m
+
+[41m[1m FAIL [22m[49m src/tasks.test.ts[2m > [22m╨▒╨░╨╖╨╛╨▓╨░╤П ╨┤╨╛╤Б╨║╨░[2m > [22m╤Б╨╛╨╖╨┤╨░╤С╤В ╨╖╨░╨┤╨░╤З╤Г ╨╕ ╨╛╨▒╤А╨╡╨╖╨░╨╡╤В
+ ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡
+[31m[1mAssertionError[22m: expected ' \t┬а╨Ъ╤Г╨┐╨╕╤В╤М ╤Е╨╗╨╡╨▒┬а ' to be '╨Ъ╤Г╨┐╨╕╤В╤М ╤Е╨╗╨╡╨▒' // Object.is equality[39m
+
+Expected: [32m"╨Ъ╤Г╨┐╨╕╤В╤М ╤Е╨╗╨╡╨▒"[39m
+Received: [31m"[7m 	┬а[27m╨Ъ╤Г╨┐╨╕╤В╤М ╤Е╨╗╨╡╨▒[7m┬а [27m"[39m
+
+[36m [2mтЭп[22m src/tasks.test.ts:[2m14:29[22m[39m
+    [90m 12|[39m     it("╤Б╨╛╨╖╨┤╨░╤С╤В ╨╖╨░╨┤╨░╤З╤Г ╨╕ ╨╛╨▒╤А╨╡╨╖╨░╨╡╤В ╨╜╨░╨╖╨▓╨░╨╜╨╕╨╡", () => {
+    [90m 13|[39m         const task = createTask(9, " \t\u00A0╨Ъ╤Г╨┐╨╕╤В╤М ╤Е╨╗╨╡╨▒\u00A0 ")
+    [90m 14|[39m         expect(task?.title).toBe("╨Ъ╤Г╨┐╨╕╤В╤М ╤Е╨╗╨╡╨▒")
+    [90m   |[39m                             [31m^[39m
+    [90m 15|[39m     })
+    [90m 16|[39m
+
+[31m[2mтОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОптОп[1/1]тОп[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m5 passed[39m[22m[90m (6)[39m
+[2m   Start at [22m 21:39:45
+[2m   Duration [22m 333ms[2m (transform 61%, import 16%, tests 12%, worker 11%)[22m
+
+
+=== (б) Поломка валидации в renameTask ===
+
+> test
+> vitest run
+
+
+ RUN  v5.0.5 C:/New/Projects/agentic-class/homework/start
+
+ ❯ src/tasks.test.ts (6 tests | 2 failed) 14ms
+   ✓ базовая доска (2)
+     ✓ создаёт задачу и обрезает название 2ms
+     ✓ фильтрует готовые задачи 1ms
+   ❯ R1: переименование и пробельные символы (2)
+     × отклоняет название из пробелов, табуляции и неразрывного пробела 7ms
+     × обрезает пробельные символы по краям при переименовании 1ms
+   ✓ R2: унаследованная пустая строка (1)
+     ✓ скрывает задачи с пустым названием во всех фильтрах 0ms
+   ✓ R3: счётчик открытых задач (1)
+     ✓ не считает задачи с пустым названием 0ms
+node.exe : 
+строка:1 знак:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/tasks.test.ts > R1: переименование и пробельные символы > отклоняет название из пробелов, табуляции и неразрывного пробела
+AssertionError: expected '   ' to be 'Сдать лабораторную' // Object.is equality
+
+Expected: "Сдать лабораторную"
+Received: "   "
+
+ ❯ src/tasks.test.ts:24:58
+     22| describe("R1: переименование и пробельные символы", () => {
+     23|     it("отклоняет название из пробелов, табуляции и неразрывного пробе…
+     24|         expect(renameTask(seedTasks, 1, "   ")[0].title).toBe("Сдать л…
+       |                                                          ^
+     25|         expect(renameTask(seedTasks, 1, "\t\t")[0].title).toBe("Сдать …
+     26|         expect(renameTask(seedTasks, 1, "\u00A0")[0].title).toBe("Сдат…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/tasks.test.ts > R1: переименование и пробельные символы > обрезает пробельные символы по краям при переименовании
+AssertionError: expected ' \t Новая задача  ' to be 'Новая задача' // Object.is equality
+
+Expected: "Новая задача"
+Received: " 	 Новая задача  "
+
+ ❯ src/tasks.test.ts:32:34
+     30|     it("обрезает пробельные символы по краям при переименовании", () =…
+     31|         const updated = renameTask(seedTasks, 1, " \t\u00A0Новая задач…
+     32|         expect(updated[0].title).toBe("Новая задача")
+       |                                  ^
+     33|     })
+     34| })
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 4 passed (6)
+   Start at  21:43:05
+   Duration  286ms (transform 50%, import 22%, tests 19%, worker 8%, environment 1%)
+
+
+=== (в) Поломка фильтрации унаследованной пустой строки ===
+
+> test
+> vitest run
+
+
+ RUN  v5.0.5 C:/New/Projects/agentic-class/homework/start
+
+ ❯ src/tasks.test.ts (6 tests | 1 failed) 8ms
+   ✓ базовая доска (2)
+     ✓ создаёт задачу и обрезает название 1ms
+     ✓ фильтрует готовые задачи 1ms
+   ✓ R1: переименование и пробельные символы (2)
+     ✓ отклоняет название из пробелов, табуляции и неразрывного пробела 0ms
+     ✓ обрезает пробельные символы по краям при переименовании 0ms
+   ❯ R2: унаследованная пустая строка (1)
+     × скрывает задачи с пустым названием во всех фильтрах 4ms
+   ✓ R3: счётчик открытых задач (1)
+     ✓ не считает задачи с пустым названием 0ms
+node.exe : 
+строка:1 знак:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/tasks.test.ts > R2: унаследованная пустая строка > скрывает задачи с пустым названием во всех фильтрах
+AssertionError: expected [ 1, 2, 3 ] to deeply equal [ 1, 2 ]
+
+- Expected
++ Received
+
+  [
+    1,
+    2,
++   3,
+  ]
+
+ ❯ src/tasks.test.ts:38:71
+     36| describe("R2: унаследованная пустая строка", () => {
+     37|     it("скрывает задачи с пустым названием во всех фильтрах", () => {
+     38|         expect(visibleTasks(seedTasks, "all").map((task) => task.id)).…
+       |                                                                       ^
+     39|         expect(visibleTasks(seedTasks, "open").map((task) => task.id))…
+     40|         expect(visibleTasks(seedTasks, "done").map((task) => task.id))…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (6)
+   Start at  21:44:45
+   Duration  167ms (transform 50%, import 25%, tests 17%, worker 7%)
+
+
+=== (г) Поломка обработки U+200B ===
+
+> test
+> vitest run
+
+
+ RUN  v5.0.5 C:/New/Projects/agentic-class/homework/start
+
+ ❯ src/tasks.test.ts (7 tests | 1 failed) 8ms
+   ✓ базовая доска (2)
+     ✓ создаёт задачу и обрезает название 1ms
+     ✓ фильтрует готовые задачи 1ms
+   ✓ R1: переименование и пробельные символы (2)
+     ✓ отклоняет название из пробелов, табуляции и неразрывного пробела 0ms
+     ✓ обрезает пробельные символы по краям при переименовании 0ms
+   ✓ R2: унаследованная пустая строка (1)
+     ✓ скрывает задачи с пустым названием во всех фильтрах 0ms
+   ✓ R3: счётчик открытых задач (1)
+     ✓ не считает задачи с пустым названием 0ms
+   ❯ Изменение требования: U+200B (zero-width space) (1)
+     × считает строку из U+200B пустой и обрезает U+200B по краям 4ms
+node.exe : 
+строка:1 знак:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/tasks.test.ts > Изменение требования: U+200B (zero-width space) > считает строку из U+200B пустой и обрезает U+200B по краям
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/tasks.test.ts:52:40
+     50| describe("Изменение требования: U+200B (zero-width space)", () => {
+     51|     it("считает строку из U+200B пустой и обрезает U+200B по краям", (…
+     52|         expect(isBlankTitle("\u200B")).toBe(true)
+       |                                        ^
+     53|         expect(createTask(9, "\u200B")).toBeUndefined()
+     54|         expect(renameTask(seedTasks, 1, "\u200B")[0].title).toBe("Сдат…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 6 passed (7)
+   Start at  21:55:02
+   Duration  168ms (transform 50%, import 25%, tests 16%, worker 8%)
+
